@@ -1,3 +1,11 @@
+import { Josefin_Sans } from 'next/font/google';
+import Header from './_components/Header.jsx';
+
+const josefin = Josefin_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 export const metadata = {
   // title: "Wild Oasis | Travel Made Easy",
   title: {
@@ -14,7 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className={`${josefin.className} min-h-screen `}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
