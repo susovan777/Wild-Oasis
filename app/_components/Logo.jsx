@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <Link href="/" className="flex items-center gap-5 z-4">
       <Image loading='eager' src="/icon.png" alt="Wild Oasis Logo" width="60" height="60" />
-      <span className="text-xl font-semibold text-[#d4dee7] no-underline">Wild Oasis</span>
+      <span className="text-xl font-semibold text-primary-100 no-underline">Wild Oasis</span>
     </Link>
   );
 };

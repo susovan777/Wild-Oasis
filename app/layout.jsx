@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${josefin.className} antialiased flex flex-col min-h-screen bg-gray-900 text-gray-50`}>
+      <body className={`${josefin.className} antialiased flex flex-col min-h-screen bg-gray-900 text-primary-50`}>
         <Header />
         <main className='max-w-7xl mx-auto flex-1 px-8 py-12'>{children}</main>
       </body>
