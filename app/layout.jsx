@@ -1,6 +1,6 @@
-import './global.css'
-import { Josefin_Sans } from 'next/font/google';
+import './global.css';
 import Header from './_components/Header.jsx';
+import { Josefin_Sans } from 'next/font/google';
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -23,9 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${josefin.className} antialiased min-h-screen bg-primary-950 text-primary-50`}>
+      <body
+        className={`flex flex-col min-h-screen bg-primary-950 text-primary-50 antialiased ${josefin.className}`}
+      >
         <Header />
-        <div className='relative'>{children}</div>
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
