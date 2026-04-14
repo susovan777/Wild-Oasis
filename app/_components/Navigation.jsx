@@ -12,7 +12,7 @@ const Navigation = () => {
     }`;
 
   return (
-    <nav className="z-10 text-xl">
+    <nav className="hidden lg:block z-10 text-xl">
       <ul className="flex gap-10 items-center">
         <li>
           <Link href="/" className={isActive('/')}>

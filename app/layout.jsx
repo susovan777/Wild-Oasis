@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         className={`flex flex-col min-h-screen bg-primary-950 text-primary-50 antialiased ${josefin.className}`}
       >
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 grid">{children}</main>
       </body>
     </html>
   );

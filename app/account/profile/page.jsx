@@ -1,5 +1,9 @@
 import React from 'react';
 
+export const metadata = {
+  title: 'Profile',
+};
+
 const Profile = () => {
   return (
     <div className="max-w-7xl mx-auto py-6 px-8 xl:px-0">
