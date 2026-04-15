@@ -7,7 +7,7 @@ export const metadata = {
 
 const Reservations = () => {
   return (
-    <div className="max-w-7xl mx-auto py-6 px-8 xl:px-0">
+    <div className="xl:px-0">
       <h2 className="font-semibold text-2xl text-accent-400 mb-7">
         Your reservations
       </h2>

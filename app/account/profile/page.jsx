@@ -1,3 +1,4 @@
+import UpdateProfileForm from '@/app/_components/UpdateProfileForm.jsx';
 import React from 'react';
 
 export const metadata = {
@@ -6,7 +7,7 @@ export const metadata = {
 
 const Profile = () => {
   return (
-    <div className="max-w-7xl mx-auto py-6 px-8 xl:px-0">
+    <div className="xl:px-0">
       <h2 className="font-semibold text-2xl text-accent-400 mb-4">
         Update your guest profile
       </h2>
@@ -15,6 +16,8 @@ const Profile = () => {
         Providing the following information will make your check-in process
         faster and smoother. See you soon!
       </p>
+
+      <UpdateProfileForm/>
     </div>
   );
 };
