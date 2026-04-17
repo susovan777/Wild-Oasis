@@ -1,10 +1,14 @@
 import React from 'react';
+import Filter from '../_components/Filter.jsx';
+import CabinList from '../_components/CabinList.jsx';
 
 export const metadata = {
   title: 'Cabins',
 };
 
-const Cabins = () => {
+const Cabins = async () => {
+  const filter = 'all';
+
   return (
     <div className="max-w-7xl mx-auto py-6 px-8 xl:px-0">
       <h1 className="text-4xl text-accent-400 font-medium mb-5">
@@ -18,6 +22,16 @@ const Cabins = () => {
         home away from home. The perfect spot for a peaceful, calm vacation.
         Welcome to paradise.
       </p>
+
+      {/* Filter */}
+      <div className="flex justify-end mb-8">
+        <Filter />
+      </div>
+
+      {/* Cabin List */}
+      <CabinList filter={filter} />
+
+      {/* Footer */}
     </div>
   );
 };
