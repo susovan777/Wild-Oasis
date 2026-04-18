@@ -11,7 +11,7 @@ const CabinCard = ({ cabin }) => {
       <div className="relative w-full h-[200px] md:w-[25%] lg:w-[35%] md:h-auto">
         <Image
           src={image}
-          alt={`Cabin ${name}`}
+          alt={name}
           fill
           className="object-cover border-b md:border-b-0 md:border-r border-primary-800"
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -21,7 +21,7 @@ const CabinCard = ({ cabin }) => {
       <div className="grow">
         <div className="pt-5 pb-4 px-7 bg-primary-950">
           <h3 className="text-accent-500 font-semibold text-2xl sm:mb-3 mb-2">
-            Cabin {name}
+            {name}
           </h3>
 
           <div className="flex gap-3 items-center sm:mb-2 mb-1">
