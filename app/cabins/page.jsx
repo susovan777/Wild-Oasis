@@ -1,12 +1,13 @@
-import React from 'react';
-import Filter from '../_components/Filter.jsx';
-import CabinList from '../_components/CabinList.jsx';
+import React, { Suspense } from 'react';
+import Loading from '@/app/cabins/loading.jsx';
+import Filter from '@/app/_components/Filter.jsx';
+import CabinList from '@/app/_components/CabinList.jsx';
 
 export const metadata = {
   title: 'Cabins',
 };
 
-const Cabins = async () => {
+const Cabins = () => {
   const filter = 'all';
 
   return (
@@ -29,7 +30,9 @@ const Cabins = async () => {
       </div>
 
       {/* Cabin List */}
-      <CabinList filter={filter} />
+      <Suspense fallback={<Loading />}>
+        <CabinList filter={filter} />
+      </Suspense>
 
       {/* Footer */}
     </div>
